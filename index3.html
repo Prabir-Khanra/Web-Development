@@ -71,11 +71,33 @@
 				height: 400px;
 				overflow: hidden;
 			}
-			.test_details{
-				background-color: orange;
-				height:200px;
-				width: 200px;
-				overflow: hidden;
+			.contact_us{
+				display: flex;
+			}
+			.contact_details{
+				width:50%;
+				padding: 25px;
+			}
+			.contact_form{
+				width:50%;
+				padding: 25px;
+			}
+			.contact_form input,.contact_form textarea{
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 10px;
+				border: none;
+				outline: none;
+			}
+			
+			.contact_form form{
+				background-color: #bdc3c7;
+				padding: 15px;
+			}
+			.contact_form button{
+				border-radius: 30px;
+				border: none;
+				padding: 6px 20px; <!-- top-bottom  left-right -->
 			}
 		</style>
 	</head>
@@ -131,16 +153,24 @@
 			</div>
 		</div>
 		
-		<div class="test_details">
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+		<h2 class="heading">Contact Us</h2>
+		<div class="contact_us">
+			<div class="contact_details">
+				<h2>Feel free to contact</h2>
+				<p>
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+				</p>
+			</div>
+			<div class="contact_form">
+				<form>
+					<input type="text" placeholder="Enter your name"/> <br/>
+					<input type="email" placeholder="Enter your email" /> <br/>
+					<textarea placeholder="Write something"></textarea><br/>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
 		</div>
-		<!--
-			<div class="test">
-			<h2>Soumitra Samanta Soumitra Samanta Soumitra Samanta Soumitra Samanta s d f d d t t t t t</h2>
-			<h2>Asish Sahu</h2>
-			<h2>Jidan Waresi</h2>
-		</div>
-		-->
+		
 	</body>
 
 
