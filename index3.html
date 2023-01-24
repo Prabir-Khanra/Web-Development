@@ -1,177 +1,285 @@
 <html>
 
-	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-		<style>
-			*{
-				font-family: 'Poppins', sans-serif;
-			}
-			.nav{
-				background-color:#dfe6e9;
-				height: 60px;
-				display: flex;
-				justify-content: space-between;
-			}
-			a{
-				color:#2d3436;
-				text-decoration: none;
-				margin-right:15px;
-			}
-			.linkBox{
-				line-height: 60px;
-			}
-			.test h2{
-				color: red;
-				background-color: black;
-				padding-right: 50px; <!-- right bottom top left -->
-				margin-right: 30px; <!-- right bottom top left -->
-			}
-			.nav h2{
-				margin-left:15px;
-				color: #6c5ce7;
-			}
-			.imgContainer{
-				height: 400px;
-				overflow: hidden;
-			}
-			.heading{
-				text-align:center;
-			}
-			.service{ 
-				display: flex;
-				justify-content: space-between;
-			}
-			.service_item{
-				padding: 15px;
-				background-color:#6ab04c;
-				color: white;
-				width: 250px;
-			}
-			.service_item button{
-				border-radius: 0px;
-				border: none;
-				padding: 8px;
-			}
-			.service_item p{
-				font-size: 14px;
-			}
-			.about{
-				display: flex;
-				justify-content: space-between;
-				overflow:hidden;
-				padding:15px;
-			}
-			.about_img,.about_details{
-				width: 50%;
-				padding:15px;
-			}
-			.about_img{
-				height: 400px;
-				overflow: hidden;
-			}
-			.contact_us{
-				display: flex;
-			}
-			.contact_details{
-				width:50%;
-				padding: 25px;
-			}
-			.contact_form{
-				width:50%;
-				padding: 25px;
-			}
-			.contact_form input,.contact_form textarea{
-				width: 100%;
-				padding: 10px;
-				margin-bottom: 10px;
-				border: none;
-				outline: none;
-			}
-			
-			.contact_form form{
-				background-color: #bdc3c7;
-				padding: 15px;
-			}
-			.contact_form button{
-				border-radius: 30px;
-				border: none;
-				padding: 6px 20px; <!-- top-bottom  left-right -->
-			}
-		</style>
-	</head>
-	
-	<body>
-		<div class="nav">
-			<h2>Online Tutor</h2>
-			<div class="linkBox">
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Service</a>
-				<a href="#">Contact</a>
-			</div>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<style>
+		* {
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.nav {
+			background-color: #dfe6e9;
+			height: 60px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		a {
+			color: #2d3436;
+			text-decoration: none;
+			margin-right: 15px;
+		}
+
+		.linkBox {
+			line-height: 60px;
+		}
+
+		.test h2 {
+			color: red;
+			background-color: black;
+			padding-right: 50px;
+			/* <!-- right bottom top left --> */
+			margin-right: 30px;
+			/* <!-- right bottom top left --> */
+		}
+
+		.nav h2 {
+			margin-left: 15px;
+			color: #6c5ce7;
+		}
+
+		.imgContainer {
+			height: 400px;
+			overflow: hidden;
+		}
+
+		.heading {
+			text-align: center;
+		}
+
+		.service {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.service_item {
+			padding: 15px;
+			background-color: #6ab04c;
+			color: white;
+			width: 250px;
+		}
+
+		.service_item button {
+			border-radius: 0px;
+			border: none;
+			padding: 8px;
+		}
+
+		.service_item p {
+			font-size: 14px;
+		}
+
+		.about {
+			display: flex;
+			justify-content: space-between;
+			overflow: hidden;
+			padding: 15px;
+		}
+
+		.about_img,
+		.about_details {
+			width: 50%;
+			padding: 15px;
+		}
+
+		.about_img {
+			height: 400px;
+			overflow: hidden;
+		}
+
+		.contact_us {
+			display: flex;
+		}
+
+		.contact_details {
+			width: 50%;
+			padding: 25px;
+		}
+
+		.contact_form {
+			width: 50%;
+			padding: 25px;
+		}
+
+		.contact_form input,
+		.contact_form textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: none;
+			outline: none;
+		}
+
+		.contact_form form {
+			background-color: #bdc3c7;
+			padding: 15px;
+		}
+
+		.contact_form button {
+			border-radius: 30px;
+			border: none;
+			padding: 6px 20px;
+			/* top-bottom left-right */
+		}
+		.shortcut{
+			background-color: #2c3e50;
+			display: flex;
+			padding: 0px 15px; /* 0px => top-bottom     15px => left-right */
+		}
+		.shortcut_item h3 {
+			color: #2ecc71;
+		}
+		.shortcut_item{
+			width: 25%;
+			padding: 15px;
+		}
+		.shortcut_item p{
+			color: white;
+		}
+		.shortcut_item ul{
+			list-style-type: none;
+			padding: 0px;
+			color: white;
+		}
+		.footer{
+			background-color: #222f3e;
+			padding: 20px;
+			text-align: center;
+			/* display: flex;
+			justify-content: center; */
+		}
+		.footer a{
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Nav details -->
+	<div class="nav">
+		<h2>Online Tutor</h2>
+		<div class="linkBox">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Service</a>
+			<a href="#">Contact</a>
 		</div>
-		<div class="imgContainer">
-			<img src="images/tree.jpg" alt="No pic"/>
+	</div>
+	<div class="imgContainer">
+		<img src="images/tree.jpg" alt="No pic" />
+	</div>
+	<h2 class="heading">Our Services</h2>
+	<div class="service">
+		<div class="service_item">
+			<h5>Web Development</h5>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when
+				looking at its layout.</p>
+			<button>know more</button>
 		</div>
-		<h2 class="heading">Our Services</h2>
-		<div class="service">
-			<div class="service_item">
-				<h5>Web Development</h5>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				<button>know more</button>
-			</div>
-			
-			<div class="service_item">
-				<h5>App Development</h5>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				<button>know more</button>
-			</div>
-			
-			<div class="service_item">
-				<h5>Graphics Design</h5>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				<button>know more</button>
-			</div>
-			
-			<div class="service_item">
-				<h5>Ads Marketing</h5>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				<button>know more</button>
-			</div>
+
+		<div class="service_item">
+			<h5>App Development</h5>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when
+				looking at its layout.</p>
+			<button>know more</button>
 		</div>
-		<h2 class="heading">About Us</h2>
-		<div class="about">
-			<div class="about_details">
-				<h5>Who we are</h5>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
-				<button>Contact Us</button>
-			</div>
-			<div class="about_img">
-				<img src="images/team.jpg" alt="No pic"/>
-			</div>
+
+		<div class="service_item">
+			<h5>Graphics Design</h5>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when
+				looking at its layout.</p>
+			<button>know more</button>
 		</div>
-		
-		<h2 class="heading">Contact Us</h2>
-		<div class="contact_us">
-			<div class="contact_details">
-				<h2>Feel free to contact</h2>
-				<p>
-				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-				</p>
-			</div>
-			<div class="contact_form">
-				<form>
-					<input type="text" placeholder="Enter your name"/> <br/>
-					<input type="email" placeholder="Enter your email" /> <br/>
-					<textarea placeholder="Write something"></textarea><br/>
-					<button type="submit">Submit</button>
-				</form>
-			</div>
+
+		<div class="service_item">
+			<h5>Ads Marketing</h5>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when
+				looking at its layout.</p>
+			<button>know more</button>
 		</div>
-		
-	</body>
+	</div>
+	<h2 class="heading">About Us</h2>
+	<div class="about">
+		<div class="about_details">
+			<h5>Who we are</h5>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when
+				looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+				of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+				desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+				search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+			<button>Contact Us</button>
+		</div>
+		<div class="about_img">
+			<img src="images/team.jpg" alt="No pic" />
+		</div>
+	</div>
+
+	<h2 class="heading">Contact Us</h2>
+	<div class="contact_us">
+		<div class="contact_details">
+			<h2>Feel free to contact</h2>
+			<p>
+				It is a long established fact that a reader will be distracted by the readable content of a page when
+				looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+				of their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+				infancy.
+			</p>
+		</div>
+		<div class="contact_form">
+			<form>
+				<input type="text" placeholder="Enter your name" /> <br />
+				<input type="email" placeholder="Enter your email" /> <br />
+				<textarea placeholder="Write something"></textarea><br />
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="shortcut">
+		<div class="shortcut_item">
+			<h3>Online Tutor</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, dolore blanditiis. Consequatur consequuntur doloribus cum!</p>
+		</div>
+		<div class="shortcut_item">
+			<h3>Know More</h3>
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Service</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+		<div class="shortcut_item">
+			<h3>Location</h3>
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Service</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+		<div class="shortcut_item">
+			<h3>News Letter</h3>
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Service</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="#">Facebook</a>
+		<a href="#">Youtube</a>
+		<a href="#">Instagram</a>
+		<a href="#">Github</a>
+		<a href="#">Linkedin</a>
+	</div>
+
+</body>
 
 
 
