@@ -31,3 +31,16 @@
     color: red;
     margin-left: 15px;
 }
+
+.icons .fa-facebook:hover{
+    color: rgb(0, 129, 221);
+    transition: 1s;
+}
+.icons .fa-instagram:hover{
+    color: rgb(219, 16, 97);
+    transition: 1s;
+}
+.icons .fa-linkedin:hover{
+    color: rgb(0, 96, 180);
+    transition: 1s;
+}

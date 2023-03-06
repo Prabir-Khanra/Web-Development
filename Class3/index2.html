@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .img_container{
+            background-color: orange;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .img_container img{
+            width: 100%;
+        }
+        .main{
+            width: 40%;
+            position: absolute;
+            /* background-color: white; */
+            padding: 20px;
+            border: 4px solid black;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%; /* top = -50%    left = -50%*/
+        }
+        .main h2{
+            font-size: 45px;
+            margin: 4px 0px 10px; /* top 4px    right-left 0px     bottom 10px*/
+        }
+    </style>
+</head>
+<body>
+    <div class="img_container">
+        <div class="main">
+            <span>Hello,</span>
+            <h2>I am Prabir Khanra</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit esse natus nobis sapiente accusamus molestiae, nihil animi provident? Alias, voluptates.</p>
+        </div>
+        <img src="./images/tree.jpg" alt="no pic" >
+    </div>
+</body>
+</html>

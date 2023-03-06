@@ -58,3 +58,8 @@ img{
     color: #6C63FF;
     padding: 8px 16px;
 }
+.second_btn:hover{
+    background-color: rgb(255, 114, 114);
+    color: white;
+    transition: .2s;
+}
