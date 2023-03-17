@@ -1,0 +1,38 @@
+.heading {
+
+}
+.heading h2 {
+    text-align: center;
+    font-size: 30px;
+    color: coral;
+}
+.heading p {
+    text-align: center;
+}
+.gallery{
+    background-color: rgb(192, 190, 190);
+    width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container{
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.image_container {
+    /* background-color: aqua; */
+    width: 23%;
+}
+
+img {
+    /* background-color: tomato; */
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+}
