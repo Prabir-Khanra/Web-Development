@@ -1,0 +1,66 @@
+
+DATABSE contains one or more than one TABLE 
+
+====================================================================
+user_data
+====================================================================
+id              =======> Primary Key (unique and not null)   ===> 1234   =======> primary key     ||  1456           || 1958
+name                                                         ===> Mukesh Tewari                   || Asish Sahu      || Jidan Waresi
+mobile_no       =======> not null (must be required)
+password        =======> not null (must be required)
+profile_pic     =======> null 
+cover_pic
+dob
+about         =========> (null or not null)
+user_name
+added_on
+
+=====================================================================
+post_data
+=====================================================================
+id                    => 123                           ====>   Primary Key
+user_id               => 1234                          ====>   Foreign Key
+file                  => mukesh.png
+description           => feeling awesome with my mom
+added_on              => 13/4/2023
+
+============================
+
+id                    => 124
+user_id               => 1234
+file                  => gf.png
+description           => feeling awesome with my girl friend
+added_on              => 11/4/2023
+
+
+============================
+
+id                    => 124
+user_id               => 1456
+file                  => kolkata.png
+description           => feeling awesome with my girl friend
+added_on              => 11/4/2023
+
+===========================================================================================================
+===========================================================================================================
+
+INT             => number type                   => 1, 123, 135, 189, 1390
+VARCHAR         => small text with limitation    => 250 latter (name, password, email)
+TEXT            => text with no limitation       => (description, comment, about)
+TIMESTAMP       => date or time                  => date-month-year hour-minute-sec
+DATETIME        => date                          => date-month-year  
+
+
+
+
+
+1
+
+my roll is 1
+
+i have 123 rupees
+
+123
+
+1234
+
