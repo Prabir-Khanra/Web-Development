@@ -1,0 +1,29 @@
+sql Query
+  => sql command => CRUD operation
+
+C = CREATE / INSERT
+R = READ / FETCH
+U = UPDATE / CHANGE
+D = DELETE / REMOVE
+===========================
+WHERE
+AND 
+OR 
+NOT 
+========================================================
+DATABASE = USER_DB
+ TABLE ===> user_table   | id name mobile password profile_pic
+==========================================================
+
+===== CREATE ============================
+ INSERT INTO user_table (id,name,mobile,password,profile_pic) VALUES (1,'Akshay Kumar',8989899090,123456,'akshay.jpg')
+
+===== READ ============================
+SELECT * FROM user_table;
+
+===== DELETE ============================
+DELETE FROM user_table WHERE id = 89
+
+===== UPDATE ============================
+UPDATE user_table SET profile_pic = 'new_pic.jpg' WHERE id = 1
+UPDATE user_table SET profile_pic = '' WHERE id = 1
